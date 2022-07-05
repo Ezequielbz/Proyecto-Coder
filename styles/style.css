@@ -1,0 +1,172 @@
+header{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+body{
+    background-color: #363534; 
+}
+
+header img{
+    text-align: center;
+    max-width: 100px;
+    
+}
+
+header h1{
+    text-align: center;
+}
+header nav{
+    text-align: center;
+}
+
+header li a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav li{
+    border: solid 2px rgb(148, 7, 7);
+    border-radius: 20px;
+    display: inline;
+    margin: 50px;
+    padding: 10px;
+}
+
+/*header ul a{
+    outline: none;
+    text-decoration: none;
+    position: relative;
+    
+}*/
+
+
+.titulo__principal {
+    margin: 0px;
+    padding: 50px;
+    font-size: 100px;
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+.imagen__portada{
+    max-width: 100%;
+}
+
+main{
+    background-color: rgba(117, 117, 117, 0.801);
+}
+
+.redes{
+    text-align: center;
+}
+
+.redes__titulo{
+    text-decoration: underline;
+}
+
+.redes__sociales li{
+    display: inline-block;
+    margin: 50px;
+    padding: 10px;
+    background-color: gray;
+    border: solid 1px ;
+    border-radius: 10px;
+}
+
+.redes__sociales li a{
+    text-decoration: none;
+    color: rgb(151, 0, 0);
+}
+
+.secciones div{
+    padding: 50px;
+    border-radius: 5px;
+    margin: 100px;
+    background-color: aliceblue;
+}
+
+.cuadro__largo{
+    background-color: black;
+    padding: 1px;
+}
+
+.cuadro__largo article{
+    color: white;
+    background-color: rgb(104, 7, 7);
+    margin: 100px;
+    padding: 50px;
+    
+}
+
+.cuadro__largo div{
+    background-color: rgb(104, 104, 104);
+    padding: 100px;
+    margin: 10px;
+    text-align:center;
+}
+
+.cuadros{
+    text-align: center;
+    margin: 50px;
+}
+.cuadros div{
+    background-color: white;
+    padding: 100px;
+    margin: 50px;
+    display: inline-block;
+    
+}
+
+
+.info{
+    text-align: left;
+}
+
+.img{
+    text-align: right;
+}
+
+.pie__main{
+    text-align: center;
+}
+
+.pie__main textarea{
+    margin: 15px;
+}
+
+/*pag competitivo*/
+
+.estadisticas__titulo{
+    text-align: center;
+    background-color: white;
+    padding: 1px;
+    margin: 50px;
+}
+
+.estadisticas article{
+    
+    margin: 50px;
+    padding: 10px;
+    background-color: white;
+}
+
+.estadisticas table {
+    margin: auto;
+    border: solid 1px;
+    border-collapse: collapse;
+}
+
+.estadisticas table td {
+    padding: 10px;
+    border: solid 2 px black;
+}
+
+
+
+footer{
+    padding: 1px;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
