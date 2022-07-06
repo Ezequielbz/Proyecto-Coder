@@ -1,5 +1,6 @@
 header{
-    background-color: black;
+    background: linear-gradient(red, black);
+
     color: white;
     padding: 10px;
 }
@@ -50,6 +51,7 @@ header nav li{
 }
 
 .imagen__portada{
+    background-color: black;
     max-width: 100%;
 }
 
