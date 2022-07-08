@@ -8,6 +8,7 @@ body{
     background-color: #363534; 
 }
 
+
 .icono_header{
     max-width: 100px;
 }
@@ -53,7 +54,8 @@ main{
 
 
 .titulo_secciones{
-    color: white;
+    color: #1affe9;
+    background-color: black;
     padding: 70px;
     text-align: center;
 }
@@ -66,14 +68,15 @@ main{
     width: 100%;
 }
 
-.secciones_cuadros{
+.fondo_secciones_cuadros{
+    background-color: black;
     margin: 25px;
 }
 
-.texto{
+.secciones_cuadros_texto{
     padding: 20px;
     color: #e63d2e;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(199, 11, 11);
 }
 
 
@@ -141,7 +144,56 @@ main{
 
 
 
-/*pag competitivo*/
+/*otras paginas*/
+
+.seccion_cuadros_largos{
+    padding: 50px;
+    background-color: black;
+}
+
+.fondo_cuadros_largos img{
+    width: 100%;
+}
+
+
+.fondo_cuadros_largos{
+    margin: 50px;
+    padding: 50px;
+    background-color: rgb(87, 87, 87);
+    
+}
+
+
+
+.cuadros_largos_texto{
+    padding: 50px;
+    color: white;
+}
+
+.seccion_cuadros{
+    margin: 50px;
+}
+
+.seccion_cuadros img{
+    width: 100%;
+}
+
+.secciones_noticias{
+    margin: 50px;
+}
+
+.cuadros_noticia{
+    background-color: black;
+    margin: 10px;
+}
+
+.cuadro_noticia_texto{
+    padding: 10px;
+    color: #e63d2e;
+}
+
+
+
 
 .estadisticas__titulo{
     text-align: center;
@@ -167,6 +219,17 @@ main{
     padding: 10px;
     border: solid 2 px black;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
