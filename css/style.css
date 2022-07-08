@@ -8,16 +8,18 @@ body{
     background-color: #363534; 
 }
 
-header img{
-    text-align: center;
+.icono_header{
     max-width: 100px;
+}
+
+.titulo_header{
+    padding: 25px;
+    text-align: start;
     
 }
 
-header h1{
-    text-align: center;
-}
-header nav{
+nav{
+    margin: 20px;
     text-align: center;
 }
 
@@ -34,32 +36,62 @@ header nav li{
     padding: 10px;
 }
 
-/*header ul a{
-    outline: none;
-    text-decoration: none;
-    position: relative;
-    
-}*/
-
-
-.titulo__principal {
-    margin: 0px;
-    padding: 50px;
-    font-size: 100px;
-    text-decoration-line: underline;
-    text-align: center;
+.imagen__portada img{
+    width: 100%;
 }
 
 .imagen__portada{
+    text-align: center;
     background-color: black;
-    max-width: 100%;
+    
 }
 
 main{
     background-color: rgba(117, 117, 117, 0.801);
 }
 
+
+
+.titulo_secciones{
+    color: white;
+    padding: 70px;
+    text-align: center;
+}
+
+.secciones{
+    margin: 50px;
+}
+
+.secciones img{
+    width: 100%;
+}
+
+.secciones_cuadros{
+    margin: 25px;
+}
+
+.texto{
+    padding: 20px;
+    color: #e63d2e;
+    background-color: rgb(0, 0, 0);
+}
+
+
+/*
+.secciones div{
+    padding: 50px;
+    border-radius: 5px;
+    margin: 100px;
+    background-color: aliceblue;
+}*/
+
+
+
+
+
+
 .redes{
+    margin-top: 70px;
     text-align: center;
 }
 
@@ -81,61 +113,33 @@ main{
     color: rgb(151, 0, 0);
 }
 
-.secciones div{
-    padding: 50px;
-    border-radius: 5px;
-    margin: 100px;
-    background-color: aliceblue;
-}
-
-.cuadro__largo{
-    background-color: black;
-    padding: 1px;
-}
-
-.cuadro__largo article{
-    color: white;
-    background-color: rgb(104, 7, 7);
-    margin: 100px;
-    padding: 50px;
-    
-}
-
-.cuadro__largo div{
-    background-color: rgb(104, 104, 104);
-    padding: 100px;
-    margin: 10px;
-    text-align:center;
-}
-
-.cuadros{
-    text-align: center;
-    margin: 50px;
-}
-.cuadros div{
-    background-color: white;
-    padding: 100px;
-    margin: 50px;
-    display: inline-block;
-    
-}
-
-
-.info{
-    text-align: left;
-}
-
-.img{
-    text-align: right;
-}
-
 .pie__main{
+    color: white;
+    background-color: #333333;
+    margin-top: 150px;
+    padding: 20px;
+
+}
+
+.pie__main__form{
     text-align: center;
 }
 
 .pie__main textarea{
     margin: 15px;
 }
+
+.boton_inicio img{
+    width: 100%;
+}
+
+.boton_inicio{
+    max-width: 50px;
+}
+
+
+
+
 
 /*pag competitivo*/
 
