@@ -1,45 +1,54 @@
 header{
     background: linear-gradient(red, black);
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: white;
     padding: 10px;
+    font-size: 10px;
 }
+
+header h1{
+    font-size: 25px;
+    text-shadow: black 2px 1px;
+}
+
+.titulo_header a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
 body{
     background-color: #363534; 
 }
 
 
 .icono_header{
-    max-width: 100px;
+    max-width: 80px;
 }
 
-.titulo_header{
-    padding: 25px;
-    text-align: start;
+
+.nav a{
     
-}
-
-nav{
-    margin: 20px;
-    text-align: center;
-}
-
-header li a{
+    border-radius: 20px;
+    padding: 10px;
     text-decoration: none;
     color: white;
+    margin: 20px;
 }
 
-header nav li{
-    border: solid 2px rgb(148, 7, 7);
-    border-radius: 20px;
-    display: inline;
-    margin: 50px;
-    padding: 10px;
+.nav a:hover{
+    background-color: #b40000;
+
 }
 
 .imagen__portada img{
     width: 100%;
 }
+
+
 
 .imagen__portada{
     text-align: center;
@@ -53,11 +62,12 @@ main{
 
 
 
-.titulo_secciones{
+.titulo_secciones h1{
     color: #1affe9;
     background-color: black;
     padding: 70px;
     text-align: center;
+    text-shadow: #ae1b4e 2px 1px;
 }
 
 .secciones{
