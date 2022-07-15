@@ -84,21 +84,30 @@ main{
     width: 100%;
 }
 
+.pie__main{
+    color: white;
+    backface-visibility: unset;
+    margin-top: 150px;
+    padding: 20px;
+    .pie__main__form{
+        text-align: center;
+        .pie__main textarea{
+            margin: 15px;
+        }
+    }
 
-
-
-
-
+}
 
 
 .redes{
     margin-top: 70px;
     text-align: center;
+    .redes__titulo{
+        text-decoration: underline;
+    }
 }
 
-.redes__titulo{
-    text-decoration: underline;
-}
+
 
 .redes__sociales li{
     display: inline-block;
@@ -107,11 +116,10 @@ main{
     background-color: gray;
     border: solid 1px ;
     border-radius: 10px;
-}
-
-.redes__sociales li:hover{
-    background-color: rgb(68, 68, 68);
-    color: #b40000;
+    &:hover{
+        background-color: rgb(68, 68, 68);
+        color: #b40000;
+    }
 }
 
 .redes__sociales li a{
@@ -121,36 +129,16 @@ main{
 
 
 
-.pie__main{
-    color: white;
-    backface-visibility: unset;
-    margin-top: 150px;
-    padding: 20px;
-
-}
-
-.pie__main__form{
-    text-align: center;
-}
-
-.pie__main textarea{
-    margin: 15px;
+.boton_inicio{
+    max-width: 50px;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 
 .boton_inicio img{
     width: 100%;
 }
-
-.boton_inicio{
-    max-width: 50px;
-}
-
-.boton_inicio:hover{
-    transform: scale(1.1);
-}
-
-
-
 
 
 /*otras paginas*/

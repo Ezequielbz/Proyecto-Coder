@@ -76,12 +76,25 @@ main {
   width: 100%;
 }
 
+.pie__main {
+  color: white;
+  -webkit-backface-visibility: unset;
+          backface-visibility: unset;
+  margin-top: 150px;
+  padding: 20px;
+}
+.pie__main .pie__main__form {
+  text-align: center;
+}
+.pie__main .pie__main__form .pie__main textarea {
+  margin: 15px;
+}
+
 .redes {
   margin-top: 70px;
   text-align: center;
 }
-
-.redes__titulo {
+.redes .redes__titulo {
   text-decoration: underline;
 }
 
@@ -93,7 +106,6 @@ main {
   border: solid 1px;
   border-radius: 10px;
 }
-
 .redes__sociales li:hover {
   background-color: rgb(68, 68, 68);
   color: #b40000;
@@ -104,32 +116,15 @@ main {
   color: rgb(151, 0, 0);
 }
 
-.pie__main {
-  color: white;
-  -webkit-backface-visibility: unset;
-          backface-visibility: unset;
-  margin-top: 150px;
-  padding: 20px;
+.boton_inicio {
+  max-width: 50px;
 }
-
-.pie__main__form {
-  text-align: center;
-}
-
-.pie__main textarea {
-  margin: 15px;
+.boton_inicio:hover {
+  transform: scale(1.1);
 }
 
 .boton_inicio img {
   width: 100%;
-}
-
-.boton_inicio {
-  max-width: 50px;
-}
-
-.boton_inicio:hover {
-  transform: scale(1.1);
 }
 
 /*otras paginas*/
