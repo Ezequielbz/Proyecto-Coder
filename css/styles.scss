@@ -1,3 +1,5 @@
+@import "variables";
+
 header{
     background: linear-gradient(red, black);
     display: flex;
@@ -6,11 +8,10 @@ header{
     color: white;
     padding: 10px;
     font-size: 10px;
-}
-
-header h1{
-    font-size: 25px;
-    text-shadow: black 2px 1px;
+    header h1{
+        font-size: 25px;
+        text-shadow: black 2px 1px;
+    }
 }
 
 .titulo_header a{
@@ -38,66 +39,56 @@ body{
     text-decoration: none;
     color: white;
     margin: 20px;
+    &:hover{
+        background-color: #b40000;
+    }
 }
-
-.nav a:hover{
-    background-color: #b40000;
-
-}
-
-.imagen__portada img{
-    width: 100%;
-}
-
-
 
 .imagen__portada{
     text-align: center;
     background-color: black;
+    img{
+        width: 100%;
+    }
 }
 
 main{
     background-color: rgba(117, 117, 117, 0.801);
 }
 
+.titulo_secciones{
+    background-color: black;
+    h1{
+        color: #1affe9;
+        padding: 70px;
+        text-align: center;
+        text-shadow: #ae1b4e 2px 1px;
+    }
+}
+
 
 .secciones{
     margin: 50px;
+    .fondo_secciones_cuadros{
+        background-color: black;
+        margin: 25px;
+        .secciones_cuadros_texto{
+            padding: 25px;
+            color: #ae1b4e;
+            font-size: 20px;
+        }
+    }
 }
-
-.titulo_secciones{
-    background-color: black;
-
-}
-
-.titulo_secciones h1{
-    color: #1affe9;
-    
-    padding: 70px;
-    text-align: center;
-    text-shadow: #ae1b4e 2px 1px;
-}
-
-
 
 .secciones img{
     width: 100%;
 }
 
-.fondo_secciones_cuadros{
-    background-color: black;
-    margin: 25px;
-
-}
 
 
 
-.secciones_cuadros_texto{
-    padding: 25px;
-    color: #ae1b4e;
-    font-size: 20px;
-    
-}
+
+
 
 
 .redes{
