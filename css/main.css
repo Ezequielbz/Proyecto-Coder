@@ -1,8 +1,6 @@
 header {
-  background: linear-gradient(red, black);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: linear-gradient(rgb(255, 0, 0), black);
+  text-align: center;
   color: white;
   padding: 10px;
   font-size: 10px;
@@ -22,6 +20,10 @@ body {
   background-attachment: fixed;
 }
 
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 .icono_header {
   max-width: 80px;
 }
@@ -37,6 +39,14 @@ body {
   background-color: #b40000;
 }
 
+.navbar {
+  color: black;
+}
+
+.navbar-light {
+  background-color: #ae1b4e !important;
+}
+
 .imagen__portada {
   text-align: center;
   background-color: black;
@@ -47,8 +57,17 @@ body {
 
 main {
   background-color: rgba(117, 117, 117, 0.801);
+  width: 100%;
 }
 
+@media (max-width: 550px) {
+  .titulo_secciones {
+    padding: 10px;
+  }
+  .titulo_secciones h1 {
+    font-size: 25px;
+  }
+}
 .titulo_secciones {
   background-color: black;
 }
@@ -72,6 +91,11 @@ main {
   font-size: 20px;
 }
 
+@media (max-width: 550px) {
+  .secciones_cuadros_texto p {
+    font-size: 15px;
+  }
+}
 .secciones img {
   width: 100%;
 }
@@ -98,22 +122,22 @@ main {
   text-decoration: underline;
 }
 
-.redes__sociales li {
+.redes__sociales {
+  margin-top: 30px;
+}
+.redes__sociales a {
   display: inline-block;
-  margin: 50px;
+  margin: 5px;
   padding: 10px;
   background-color: gray;
   border: solid 1px;
   border-radius: 10px;
+  text-decoration: none;
+  color: #ae1b4e;
 }
-.redes__sociales li:hover {
+.redes__sociales a:hover {
   background-color: rgb(68, 68, 68);
   color: #b40000;
-}
-
-.redes__sociales li a {
-  text-decoration: none;
-  color: rgb(151, 0, 0);
 }
 
 .boton_inicio {
@@ -122,7 +146,6 @@ main {
 .boton_inicio:hover {
   transform: scale(1.1);
 }
-
 .boton_inicio img {
   width: 100%;
 }
@@ -204,4 +227,4 @@ footer {
   color: white;
   text-align: center;
   background-color: black;
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=main.css.map */

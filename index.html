@@ -3,38 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Noticias del mundo gaming. Descubre las últimas noticias y novedades de videojuegos. Infórmate para estar siempre al día. Últimas noticias.">
+    <meta name="keywords"  content="VIDEOJUEGOS, NOTICIAS, COMPETENCIAS, NOVEDADES, GAMING, GAMES">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
     <title>Worlds Game</title>
 </head>
 <body>
     <header id="inicio">
+        
+            <nav class="navbar navbar-expand-sm navbar-light bg-light ">   
 
-            <a href="index.html"><img src="img/icon.png" alt="icono" class="icono_header"> 
-            </a>
-            <div class="nav">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-3 col-md-3 col-lg-3">
-                            <a href="paginas/noticias.html">Noticias</a></li>
-                        </div>
-                        <div class="col-sm-3 col-md-3 col-lg-3">
-                            <a href="paginas/juegos.html">Juegos</a></li>
-                        </div>
-                        <div class="col-sm-3 col-md-3 col-lg-3">
-                            <a href="paginas/competitivo.html">Competitivo</a></li>
-                        </div>
-                        <div class="col-sm-3 col-md-3 col-lg-3">
-                            <a href="paginas/clips.html">Clips</a></li>
-                        </div>
+                <a class="navbar-brand" href="#">
+                  <img src="img/icon.png" width="50" height="50" alt="">
+                </a>
     
+                <h1> Worlds Game</h1>
+    
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="opciones">   
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link" href="paginas/noticias.html">Noticias</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="paginas/juegos.html">Juegos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="paginas/competitivo.html">Competitivo</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="paginas/clips.html">Clips</a>
+                          </li>            
+                        </ul>
                     </div>
-                </div>
-            </div>
-                  
-            <div class="titulo_header">
-                <a href="index.html"><h1>Worlds Game</h1></a>
-            </div>
+                
+              </nav>
+        </div>               
     </header>
     <main>
         <div class="imagen__portada">
@@ -135,11 +142,18 @@
                     <h3>Nos podes seguir en:</h3>
                 </div>
                 <div class="redes__sociales">
-                    <ul>
-                        <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                        <li><a href="https://twitter.com/?lang=es" target="_blank">Twitter</a></li>
-                        <li><a href="https://discord.com/" target="_blank">Discord</a></li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <a href="https://twitter.com/?lang=es" target="_blank">Twitter</a>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <a href="https://discord.com/" target="_blank">Discord</a>
+                        </div>
+                    </div>
+                    
                 </div>
                 
 
@@ -153,6 +167,8 @@
         <p>Copyright by Ezequiel Bazan</p>
     </footer>
     </main>
-    <script src="/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
