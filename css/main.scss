@@ -1,22 +1,21 @@
 @import "variables";
 
 header{
-    background: linear-gradient(rgb(255, 0, 0), black);
+    background: linear-gradient($titulos, black);
     text-align: center;
     color: white;
     padding: 10px;
     font-size: 10px;
-    header h1{
-        font-size: 25px;
-        text-shadow: black 2px 1px;
+    .titulo_header {
+        text-decoration: none;
+        color: white;
     }
 }
 
-.titulo_header a{
-    text-decoration: none;
+
+.nav-link{
     color: white;
 }
-
 
 
 body{
@@ -29,29 +28,24 @@ body{
 }
 
 .icono_header{
-    max-width: 80px;
+    max-width: $width-icon-header;
 }
 
 
 
-
-.nav a{
-    
-    border-radius: 20px;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    margin: 20px;
+.navbar-nav {
+    a{
+    font-size: 15px;
+    color: white !important;
     &:hover{
-        background-color: #b40000;
+        color: $color-principal !important;
+        
+    }
     }
 }
-
-.navbar{
-    color: black;
-}
+    
 .navbar-light{
-    background-color: $color-principal !important;
+    background-color: transparent !important;
 }
 
 
@@ -69,22 +63,15 @@ body{
 }
 
 
-@media (max-width: 550px){
-    
-}
+
 
 main{
     background-color: rgba(117, 117, 117, 0.801);
     width: 100%;
 }
 
-@media (max-width: 550px){
-    .titulo_secciones{
-        padding: 10px;  
-        h1{
-            font-size: $tamanoh2 - 5;
-        }  
-    }
+.secciones img{
+    width: 100%;
 }
 
 .titulo_secciones{
@@ -112,15 +99,61 @@ main{
 }
 
 @media (max-width: 550px){
+    .icono_header{
+        width: $width-icon-header - 15;
+    }
+}
+
+@media (max-width: 550px){
+    .titulo_secciones{
+        padding: 10px;  
+        h1{
+            font-size: $tamanoh2 - 5;
+        }  
+    }
+}
+
+@media (max-width: 550px){
     .secciones_cuadros_texto p{
         font-size: $tamanoh2 * 0.5;
     }
 }
-.secciones img{
-    width: 100%;
+
+
+
+@media (max-width: 800px){
+    header h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 800px){
+    header .navbar-nav a{
+        font-size: 14px;
+    }
 }
 
 
+
+@media (max-width: 800px){
+    .titulo_secciones{
+        padding: 10px;  
+        h1{
+            font-size: $tamanoh2 - 2;
+        }  
+    }
+}
+
+@media (max-width: 800px){
+    .secciones_cuadros_texto p{
+        font-size: $tamanoh2 /2 +2;
+    }
+}
+
+
+.secciones img{
+    width: 100%;
+}
 
 .pie__main{
     color: white;
@@ -210,10 +243,46 @@ main{
 }
 
 .cuadros_largos_texto{
-    font-size: 25px;
-    padding: 50px;
+    font-size: 20px;
+    margin: 50px;
     color: white;
 }
+
+@media (max-width: 600px){
+    .fondo_cuadros_largos{
+        margin: 1px;
+        .cuadros_largos{
+            margin: 1px;
+            .cuadros_largos_texto{
+                margin: 10px;
+                padding: 5px;
+                font-size: 10px;
+            }
+        }
+    } 
+}
+
+    
+@media (max-width: 1000px){
+    .fondo_cuadros_largos{
+        margin: 1px;
+        .cuadros_largos{
+            margin: 1px;
+            .cuadros_largos_texto{
+                margin: 50px;
+                padding: 5px;
+                font-size: 15px;
+            }
+        }
+    } 
+}
+
+@media (max-width: 1220px){
+    .cuadros_largos_texto{
+        font-size: $tamanoh2 - 10;
+    }             
+}
+
 
 .seccion_cuadros{
     margin: 50px;
@@ -234,7 +303,7 @@ main{
 
 .cuadro_noticia_texto{
     padding: 10px;
-    color: #e63d2e;
+    color: $color-principal;
 }
 
 
@@ -243,7 +312,7 @@ main{
 .estadisticas__titulo{
     text-align: center;
     background-color: white;
-    padding: 1px;
+    padding: 20px;
     margin: 50px;
 }
 
