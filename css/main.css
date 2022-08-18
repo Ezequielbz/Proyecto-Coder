@@ -15,6 +15,7 @@ header .titulo_header {
 }
 
 body {
+  width: 100%;
   background-image: url(../img/battlefield5.jpg);
   background-attachment: fixed;
 }
@@ -47,9 +48,13 @@ body {
   width: 100%;
 }
 
+@media (min-width: 1500px) {
+  .imagen__portada img {
+    width: 80%;
+  }
+}
 main {
   background-color: rgba(117, 117, 117, 0.801);
-  width: 100%;
 }
 
 .secciones img {
@@ -67,7 +72,7 @@ main {
 }
 
 .secciones {
-  margin: 50px;
+  margin: 120px;
 }
 .secciones .fondo_secciones_cuadros {
   background-color: black;
@@ -128,7 +133,6 @@ main {
   color: white;
   -webkit-backface-visibility: unset;
           backface-visibility: unset;
-  margin-top: 150px;
   padding: 20px;
 }
 .pie__main .pie__main__form {
@@ -149,7 +153,7 @@ main {
 .redes__sociales {
   margin-top: 30px;
 }
-.redes__sociales a {
+.redes__sociales .icon {
   display: inline-block;
   margin: 5px;
   padding: 10px;
@@ -159,9 +163,19 @@ main {
   text-decoration: none;
   color: #ae1b4e;
 }
-.redes__sociales a:hover {
+.redes__sociales .icon:hover {
   background-color: rgb(68, 68, 68);
-  color: #b40000;
+  color: #00adb9;
+}
+.redes__sociales .icon:hover a {
+  color: #00adb9;
+}
+.redes__sociales .icon a {
+  color: #ae1b4e;
+}
+
+.icon svg {
+  width: 20px;
 }
 
 .boton_inicio {
@@ -179,24 +193,22 @@ main {
   padding: 50px;
   background-color: black;
 }
-
-.fondo_cuadros_largos img {
-  width: 100%;
-}
-
-.fondo_cuadros_largos {
-  margin: 50px;
+.seccion_cuadros_largos .fondo_cuadros_largos {
+  margin-top: 100px;
+  margin-bottom: 100px;
   padding: 50px;
   background-color: rgb(87, 87, 87);
+}
+.seccion_cuadros_largos .fondo_cuadros_largos img {
+  width: 100%;
 }
 
 .cuadros_largos {
   background-color: rgb(0, 0, 0);
 }
-
-.cuadros_largos_texto {
-  font-size: 20px;
-  margin: 50px;
+.cuadros_largos .cuadros_largos_texto {
+  font-size: 25px;
+  padding: 30px;
   color: white;
 }
 
@@ -213,7 +225,7 @@ main {
     font-size: 10px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .fondo_cuadros_largos {
     margin: 1px;
   }
@@ -223,7 +235,7 @@ main {
   .fondo_cuadros_largos .cuadros_largos .cuadros_largos_texto {
     margin: 50px;
     padding: 5px;
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 @media (max-width: 1220px) {
@@ -234,23 +246,69 @@ main {
 .seccion_cuadros {
   margin: 50px;
 }
-
 .seccion_cuadros img {
   width: 100%;
 }
 
-.secciones_noticias {
-  margin: 50px;
-}
-
 .cuadros_noticia {
+  height: 550px;
   background-color: black;
   margin: 10px;
 }
 
-.cuadro_noticia_texto {
+.juegos_videos {
+  margin: 100px;
+}
+
+.cuadros_juegos {
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: black;
+  margin: 10px;
+  height: 650px;
+}
+.cuadros_juegos .cuadro_div_texto {
   padding: 10px;
   color: #ae1b4e;
+}
+
+.cuadros_juegos::-webkit-scrollbar {
+  width: 5px;
+}
+
+.cuadros_juegos h4 {
+  margin-top: 10px;
+  text-align: center;
+  color: #1affe9;
+  text-decoration: underline;
+}
+
+.cuadros_noticia_video {
+  width: 100%;
+}
+.cuadros_noticia_video iframe {
+  width: 100%;
+}
+
+.cuadro_noticia_texto {
+  margin: 10px;
+  color: #ae1b4e;
+}
+
+.cuadros_clips {
+  background-color: black;
+  margin: 10px;
+}
+.cuadros_clips .cuadro_div_texto {
+  padding: 10px;
+  color: #ae1b4e;
+}
+
+.cuadros_clips h4 {
+  padding-top: 10px;
+  text-align: center;
+  color: #1affe9;
+  text-decoration: underline;
 }
 
 .estadisticas__titulo {
@@ -275,6 +333,60 @@ main {
 .estadisticas table td {
   padding: 10px;
   border: solid 2 px black;
+}
+
+.table_valorant {
+  width: 100%;
+  background-image: url(../img/valorant.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #1affe9;
+  padding: 50px;
+}
+.table_valorant table {
+  margin: auto;
+  text-align: center;
+  margin-top: 25px;
+}
+.table_valorant table th {
+  border: 1px solid #ae1b4e;
+  padding: 15px;
+  background-color: rgb(116, 114, 114);
+  color: black;
+}
+.table_valorant table th:hover {
+  background-color: #ae1b4e;
+}
+
+.table_compe thead {
+  background-color: black;
+}
+
+.table_csgo {
+  width: 100%;
+  background-image: url(../img/csgo.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #1affe9;
+  padding: 50px;
+}
+.table_csgo table {
+  margin: auto;
+  text-align: center;
+  margin-top: 25px;
+}
+.table_csgo table th {
+  border: 1px solid #ae1b4e;
+  padding: 15px;
+  background-color: rgb(116, 114, 114);
+  color: black;
+}
+.table_csgo table th:hover {
+  background-color: #ae1b4e;
 }
 
 footer {
